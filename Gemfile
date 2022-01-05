@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.0.3"
 
 # Use specific branch of Rails
-gem "rails", github: "rails/rails", branch: "7-0-stable"
+gem "rails", github: "etiennebarrie/rails", branch: "no_connection_on_boot"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"

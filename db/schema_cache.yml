@@ -88,6 +88,25 @@ indexes:
   schema_migrations: []
   ar_internal_metadata: []
   accounts: []
+types:
+  varchar: !ruby/object:ActiveModel::Type::String
+    true: t
+    false: f
+    precision:
+    scale:
+    limit:
+  datetime(6): !ruby/object:ActiveRecord::Type::DateTime
+    precision: 6
+    scale:
+    limit:
+  integer: !ruby/object:ActiveRecord::ConnectionAdapters::SQLite3Adapter::SQLite3Integer
+    precision:
+    scale:
+    limit:
+    range: !ruby/range
+      begin: -9223372036854775808
+      end: 9223372036854775808
+      excl: true
 version: 20220105144103
 database_version: !ruby/object:ActiveRecord::ConnectionAdapters::AbstractAdapter::Version
   version:
