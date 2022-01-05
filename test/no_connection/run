@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -euxo pipefail
+
+chmod a-r db/development.sqlite3
+trap "chmod a-r db/development.sqlite3" EXIT
+
+bin/rails r 'Account.columns_hash'
